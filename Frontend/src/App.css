@@ -1,0 +1,74 @@
+/* # Hippo
+
+# ========= IMPORTANT NOTICE =========
+# This code is by no ways a complete program and is only considered an initial working prototype.
+# Thus, no security, scalability, etc. practices are included in the code.
+# We don't provide any guarantee on any aspect of this application. To deploy the code in a real environment,
+# other aspects of software development need to be done, and a team of DevOps, program security engineers and developers
+# should overtake the project when producing the final software. */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.theme-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.theme-toggle-button {
+  background-color: rgba(var(--color-accent-rgb), 1);
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-button-text);
+  border-radius: 999px;
+  padding: 6px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle-button:hover {
+  background-color: rgba(var(--color-accent-rgb), 0.85);
+}
+
+.span-theme-toggle {
+  margin-right: 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

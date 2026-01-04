@@ -1,0 +1,81 @@
+/* # Hippo
+
+# ========= IMPORTANT NOTICE =========
+# This code is by no ways a complete program and is only considered an initial working prototype.
+# Thus, no security, scalability, etc. practices are included in the code.
+# We don't provide any guarantee on any aspect of this application. To deploy the code in a real environment,
+# other aspects of software development need to be done, and a team of DevOps, program security engineers and developers
+# should overtake the project when producing the final software. */
+
+:root {
+  --color-background: #f4f6fb;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f2f4f7;
+  --color-panel: #ffffff;
+  --color-border-strong: #1f2937;
+  --color-border-soft: rgba(15, 23, 42, 0.12);
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #4b5563;
+  --color-accent-rgb: 234, 199, 92;
+  --color-accent-contrast: #1f1a0c;
+  --color-success-rgb: 130, 195, 112;
+  --color-success-contrast: #1b5e20;
+  --color-warning-rgb: 255, 152, 0;
+  --color-warning-contrast: #7c4800;
+  --color-input-bg: #ffffff;
+  --color-input-text: #0f172a;
+  --color-input-border: #94a3b8;
+  --color-button-text: #0f172a;
+  --color-link: #b07900;
+  --color-link-hover: rgba(234, 199, 92, 1);
+  --color-received-bg: #f1f1f1;
+  --color-voice-hint: #ad5a00;
+  --color-disabled-bg: rgba(150, 150, 150, 0.3);
+  --color-disabled-text: #6b7280;
+  --color-panel-shadow: rgba(15, 23, 42, 0.08);
+}
+
+body.dark-theme {
+  --color-background: #040b19;
+  --color-surface: #0f172a;
+  --color-surface-muted: #141f2f;
+  --color-panel: #101c2d;
+  --color-border-strong: #4b5d7a;
+  --color-border-soft: rgba(75, 93, 122, 0.5);
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-accent-rgb: 77, 137, 255;
+  --color-accent-contrast: #01122a;
+  --color-success-rgb: 47, 189, 146;
+  --color-success-contrast: #bbf7d0;
+  --color-warning-rgb: 251, 191, 36;
+  --color-warning-contrast: #fde68a;
+  --color-input-bg: #0a1526;
+  --color-input-text: #e2e8f0;
+  --color-input-border: #3f4d66;
+  --color-button-text: #041021;
+  --color-link: #f0d776;
+  --color-link-hover: #fde68a;
+  --color-received-bg: #1c2a40;
+  --color-voice-hint: #fcd34d;
+  --color-disabled-bg: rgba(148, 163, 184, 0.2);
+  --color-disabled-text: #94a3b8;
+  --color-panel-shadow: rgba(0, 0, 0, 0.45);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

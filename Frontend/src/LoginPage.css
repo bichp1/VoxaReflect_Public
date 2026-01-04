@@ -1,0 +1,109 @@
+/* # Hippo
+
+# ========= IMPORTANT NOTICE =========
+# This code is by no ways a complete program and is only considered an initial working prototype.
+# Thus, no security, scalability, etc. practices are included in the code.
+# We don't provide any guarantee on any aspect of this application. To deploy the code in a real environment,
+# other aspects of software development need to be done, and a team of DevOps, program security engineers and developers
+# should overtake the project when producing the final software. */
+
+.middle-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(circle at top, rgba(var(--color-accent-rgb), 0.15), transparent 55%),
+      var(--color-background);
+}
+
+.global-logo-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.global-logo-image {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+.middle-box {
+    width: min(560px, 92%);
+    padding: 4% 6%;
+    border-radius: 22px;
+    background-color: var(--color-panel);
+    border: 1px solid var(--color-border-soft);
+    box-shadow: 0 25px 55px var(--color-panel-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.welcome-subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-text-secondary);
+    margin-bottom: 1%;
+}
+
+.username-field {
+    padding: 15px;
+    width: 80%;
+    text-align: center;
+    background-color: var(--color-input-bg);
+    border-radius: 10px;
+    font-size: 1.35rem;
+    border: 1px solid var(--color-input-border);
+    color: var(--color-input-text);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.login-button {
+    border: 1px solid var(--color-border-strong);
+    background-color: rgba(var(--color-accent-rgb), 1);
+    border-radius: 12px;
+    font-size: 1.4rem;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-button-text);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: rgba(var(--color-accent-rgb), 0.85);
+}
+
+.login-info {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    color: var(--color-text-secondary);
+}
+
+.provide-ideas-link {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-link);
+}
+
+.provide-ideas-link:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}

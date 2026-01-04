@@ -1,0 +1,50 @@
+# Python / Flask backend
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.pyc
+instance/
+*.db
+*.sqlite3
+
+# API keys / secrets
+Backend/api_key.txt
+*.env
+.env.*
+!.env.example
+.env
+
+# Audio uploads and logs
+Backend/audio-*.mp4
+*.mp3
+*.wav
+
+# Node / React frontend
+Frontend/node_modules/
+Frontend/build/
+Frontend/dist/
+Frontend/.env
+Frontend/.env.local
+Frontend/__MACOSX
+
+# Alternative: catch all node_modules anywhere
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+*.log
+.AppleDouble
+.LSOverride
+
+# Windows
+desktop.ini

@@ -1,0 +1,13 @@
+flask
+flask-cors
+openai
+retry
+backoff
+requests
+python-dotenv
+numpy
+torch
+rank-bm25
+sentence-transformers
+transformers
+pyyaml
